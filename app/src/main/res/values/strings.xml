@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">checksV3</string>
+    <string name="title_activity_ocr_activiry">OcrActiviry</string>
 </resources>
