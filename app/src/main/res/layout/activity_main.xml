@@ -19,48 +19,49 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
 
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:layout_alignParentStart="true"
+        android:id="@+id/editText2"
+        android:layout_above="@+id/B_Output"
+        android:layout_below="@+id/B_Input"
+        android:layout_alignParentEnd="true"
+        android:textSize="10sp" />
+
     <Button
         android:text="Input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
+        android:layout_marginTop="32dp"
         android:id="@+id/B_Input"
-        android:layout_below="@+id/editText"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="0001"
-        android:ems="10"
-        android:layout_below="@+id/B_Input"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="30dp"
-        android:id="@+id/editText2" />
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/B_Output"
+        android:layout_marginEnd="61dp" />
 
     <Button
         android:text="Output by code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/B_Output"
         android:layout_centerVertical="true"
-        android:layout_alignParentStart="true"
-        android:id="@+id/B_Output" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/textView"
         android:layout_below="@+id/textView2"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="45dp"
-        android:id="@+id/textView" />
+        android:layout_alignParentStart="true" />
 
     <TextView
         android:text="Produktas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="45dp"
         android:id="@+id/textView2"
         android:layout_below="@+id/B_Output"
         android:layout_alignParentStart="true" />

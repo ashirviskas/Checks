@@ -5,49 +5,61 @@
     android:layout_height="match_parent">
 
 
-    <ImageButton
+    <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/v"
-        android:id="@+id/imageButton2"
-        android:maxHeight="15dp"
-        android:maxWidth="15dp"
-        android:minHeight="10dp"
-        android:minWidth="10dp"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_media_play"
+        android:layout_alignTop="@+id/floatingActionButton2"
+        android:layout_toEndOf="@+id/floatingActionButton2"
+        android:layout_marginStart="13dp"
+        android:id="@+id/floatingActionButton3"
+        app:backgroundTint="@android:color/white"
+        app:rippleColor="@android:color/holo_green_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_edit"
+        android:layout_marginStart="51dp"
+        android:id="@+id/floatingActionButton2"
+        app:backgroundTint="@android:color/white"
+        app:rippleColor="@android:color/holo_orange_light"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/floatingActionButton" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_delete"
+        android:id="@+id/floatingActionButton"
+        android:layout_marginEnd="131dp"
+        app:backgroundTint="@android:color/white"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/edit"
-        android:id="@+id/imageButton3"
-        android:maxHeight="15dp"
-        android:maxWidth="15dp"
-        android:minHeight="10dp"
-        android:minWidth="10dp"
-        android:layout_alignBottom="@+id/imageButton2"
-        android:layout_toStartOf="@+id/imageButton2" />
-
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/x"
-        android:id="@+id/imageButton"
-        android:maxHeight="15dp"
-        android:maxWidth="15dp"
-        android:minHeight="10dp"
-        android:minWidth="10dp"
-        android:layout_alignBottom="@+id/imageButton3"
-        android:layout_toStartOf="@+id/imageButton3" />
 
     <TextView
         android:text="TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton"
-        android:layout_alignParentStart="true"
         android:id="@+id/productDescription"
-        android:layout_alignBottom="@+id/imageButton"
-        android:layout_toStartOf="@+id/imageButton" />
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/textView4"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productPrice"
+        android:textSize="18sp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBottom="@+id/floatingActionButton"
+        android:layout_toStartOf="@+id/floatingActionButton2" />
 </RelativeLayout>
